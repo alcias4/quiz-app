@@ -37,7 +37,7 @@ function App() {
               <img src={data?.icon} />
               {data?.title}
             </picture>
-            <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun" />
+            <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun-img" />
             <div
               className="icon-moon-dark"
               onClick={() => moonTheme()}
