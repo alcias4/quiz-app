@@ -1,0 +1,143 @@
+.contend-question {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  animation: apa 1s ease-in-out;
+}
+
+@keyframes apa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.quest {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  position: relative;
+}
+
+.quest span {
+  font-style: italic;
+  color: #adc1e1;
+}
+
+.quest h2 {
+  width: 100%;
+  font-size: 30px;
+}
+
+.pogress {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #3b4d66;
+  bottom: 70px;
+}
+
+.pros {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #a729f5;
+  transition: width 500ms ease;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  height: 100%;
+}
+
+.res {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  border: none;
+  width: 100%;
+  height: 70px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid transparent;
+  position: relative;
+  padding-right: 45px;
+}
+
+.res-dark {
+  background-color: #3b4d66;
+}
+
+.res-light {
+  background-color: #ffff;
+  color: #3b4d66;
+}
+
+.res img {
+  position: absolute;
+  right: 5px;
+}
+
+.res span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f4;
+  width: 40px;
+  min-width: 40px;
+  height: 90%;
+  color: #3b4d66;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 200ms;
+}
+
+.res:hover {
+  border: 2px solid #a729f5;
+}
+
+.res:hover span {
+  background-color: #a729f5;
+  color: white;
+}
+
+.submit {
+  padding: 10px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: #a729f5;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #d6a9f1;
+}
+
+.answer-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.answer-error-ligth {
+  color: #3b4d66;
+}

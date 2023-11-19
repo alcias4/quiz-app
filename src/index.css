@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #313e51;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.svg-background2 {
+  display: none;
+}
+.svg-background {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 180px;
+  width: 100%;
+}
+
+.he-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  gap: 20px;
+  animation: aparecer 1s ease-in-out;
+  font-weight: 600;
+}
+
+.he-icon-ligth {
+  color: #3b4d66;
+}
+
+.he-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+header menu {
+  display: flex;
+  width: 1000px;
+  justify-content: flex-end;
+  gap: 10px;
+  animation: aparecer 1s ease-in-out;
+  position: relative;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon-moon-dark {
+  background-color: #a729f5;
+  color: white;
+  width: 45px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 100ms ease;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.425) inset;
+}
+
+.icon-moon-dark span {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 600ms ease;
+  left: 2px;
+  top: 2px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.377) inset;
+}
+
+@media (width < 1100px) {
+  header menu,
+  .contend-question,
+  .start {
+    width: 800px;
+  }
+
+  .quest {
+    width: 45%;
+  }
+
+  .welcom h1,
+  .welcom span {
+    font-size: 40px;
+  }
+
+  .quest h2 {
+    font-size: 25px;
+  }
+}
+
+@media (width < 880px) {
+  .contend-question,
+  .start,
+  header menu {
+    width: 700px;
+  }
+}
+
+@media (width < 760px) {
+  .contend-question,
+  .start,
+  header menu {
+    width: 80%;
+  }
+
+  header {
+    top: 40px;
+    z-index: 100;
+  }
+  .contend-question,
+  .start {
+    flex-direction: column;
+  }
+
+  .contend-question {
+    margin-top: 250px;
+  }
+
+  .answer,
+  .quest {
+    width: 100%;
+  }
+
+  .quest h2 {
+    min-height: 90px;
+  }
+
+  .pogress {
+    margin-top: 30px;
+    position: initial;
+  }
+
+  .btn-ini,
+  .welcom {
+    width: 100%;
+  }
+  .welcom {
+    height: 30%;
+    margin-bottom: 30px;
+  }
+  .welcom h1,
+  .welcom span {
+    font-size: 60px;
+  }
+
+  main {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .svg-background {
+    display: none;
+  }
+
+  .svg-background2 {
+    display: initial;
+    width: 100%;
+    height: 30%;
+    top: 5px;
+    position: absolute;
+  }
+}
+
+@media (width < 550px) {
+  .welcom h1,
+  .welcom span {
+    font-size: 50px;
+  }
+}
+
+@media (width < 460px) {
+  .welcom h1,
+  .welcom span {
+    font-size: 40px;
+  }
+
+  .contend-question {
+    margin-top: 300px;
+  }
+}
