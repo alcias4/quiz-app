@@ -84,7 +84,8 @@ header menu {
 .icon-moon-dark {
   background-color: #a729f5;
   color: white;
-  width: 45px;
+  width: 44px;
+  height: 24px;
   border-radius: 30px;
   cursor: pointer;
   display: flex;

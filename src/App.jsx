@@ -30,14 +30,14 @@ function App() {
 
         <img className="svg-background2" src={!moon ? './images/pattern-background-tablet-dark.svg' : './images/pattern-background-tablet-light.svg'} alt="background" />
         <header>
-          <menu>
+          <menu style={{ listStyle: "none" }}>
             <li className={moon ? "he-icon he-icon-ligth" : "he-icon"}
               style={question === null ? { display: "none" } : null}
             >
               {data?.icon ? <img src={data.icon} alt="icon" /> : null}
               {data?.title}
             </li>
-            <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun-img" />
+            <li> <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun-img" /></li>
             <li
               className="icon-moon-dark"
               onClick={() => moonTheme()}
@@ -47,7 +47,7 @@ function App() {
                 style={!moon ? { marginLeft: "19px", rotate: "360deg" } : null}
               />
             </li>
-            <img src={!moon ? "./images/icon-moon-light.svg" : "./images/icon-moon-dark.svg"} alt="icon-moon" />
+            <li><img src={!moon ? "./images/icon-moon-light.svg" : "./images/icon-moon-dark.svg"} alt="icon-moon" /></li>
           </menu>
         </header>
         <main>
