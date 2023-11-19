@@ -234,7 +234,7 @@ header menu {
   }
 }
 
-@media (width < 460px) and (height < 600px) {
+@media (width < 500px) and (height < 700px) {
   .start {
     width: 90%;
     height: 100%;
