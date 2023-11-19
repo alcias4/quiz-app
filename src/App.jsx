@@ -34,11 +34,11 @@ function App() {
             <li className={moon ? "he-icon he-icon-ligth" : "he-icon"}
               style={question === null ? { display: "none" } : null}
             >
-              <img src={data?.icon} alt="icon" />
+              {data?.icon ? <img src={data.icon} alt="icon" /> : null}
               {data?.title}
             </li>
             <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun-img" />
-            <div
+            <li
               className="icon-moon-dark"
               onClick={() => moonTheme()}
               style={moon ? { boxShadow: "0px 10px 10px rgba(255, 255, 255, 0.425) inset" } : null}
@@ -46,7 +46,7 @@ function App() {
               <span
                 style={!moon ? { marginLeft: "19px", rotate: "360deg" } : null}
               />
-            </div>
+            </li>
             <img src={!moon ? "./images/icon-moon-light.svg" : "./images/icon-moon-dark.svg"} alt="icon-moon" />
           </menu>
         </header>
