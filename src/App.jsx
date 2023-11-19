@@ -31,12 +31,12 @@ function App() {
         <img className="svg-background2" src={!moon ? './images/pattern-background-tablet-dark.svg' : './images/pattern-background-tablet-light.svg'} alt="background" />
         <header>
           <menu>
-            <picture className={moon ? "he-icon he-icon-ligth" : "he-icon"}
+            <li className={moon ? "he-icon he-icon-ligth" : "he-icon"}
               style={question === null ? { display: "none" } : null}
             >
-              <img src={data?.icon} />
+              <img src={data?.icon} alt="icon" />
               {data?.title}
-            </picture>
+            </li>
             <img src={!moon ? "./images/icon-sun-light.svg" : "./images/icon-sun-dark.svg"} alt="icon-sun-img" />
             <div
               className="icon-moon-dark"
